@@ -28,8 +28,22 @@
             ],
             "styles": [
               "src/styles.css"
+              ,
+              {
+                "input": "external/button-upload/button-upload.css",
+                "inject": true,
+                "bundleName": "upload-button-css"
+              }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "external/button-upload/button-upload.js",
+                "inject": true,
+                "bundleName": "upload-button-js"
+              }
+
+            ]
+
           },
           "configurations": {
             "production": {
@@ -95,8 +109,8 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "scripts": []
+            ]
+
           }
         }
       }
